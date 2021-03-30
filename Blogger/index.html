@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav-header">
+        <div class="nav-center">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <div class="menu-icons">
+            <img src="./images/icon-hamburger.svg" alt="" />
+            <img src="/images/icon-close.svg" class="hide" alt="" />
+          </div>
+        </div>
+        <div class="nav-links hide">
+          <ul class="primary-links">
+            <li class="link">Product <i class="fas fa-angle-down"></i></li>
+            <li class="link">Company <i class="fas fa-angle-down"></i></li>
+            <li class="link">
+              Connect<i class="fas fa-angle-down" id="connect"></i>
+              <div class="sub-menu hide">
+                <ul class="sub-menu-links">
+                  <li class="sub-link">Contact</li>
+                  <li class="sub-link">Newsletter</li>
+                  <li class="sub-link">Linkedin</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="secondary-links">
+            <li class="link login">Login</li>
+            <li class="link signup">Sign Up</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">A modern publishing platform</h1>
+        <h3 class="hero-subtitle">
+          Grow your audience and build your online brand
+        </h3>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-white">Start for Free</a>
+          <a href="#" class="btn btn-red">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <main class="container">
+      <section class="section-light section1">
+        <h2 class="section-title">Designed for the future</h2>
+        <div class="section-content">
+          <div class="section-img">
+            <picture>
+              <source
+                media="(min-width: 850px)"
+                srcset="./images/illustration-editor-desktop.svg"
+              />
+              <source
+                media="(min-width: 300px)"
+                srcset="./images/illustration-editor-mobile.svg"
+              />
+              <img src="./images/illustration-editor-desktop.svg" />
+            </picture>
+          </div>
+          <div class="section-txt">
+            <article>
+              <h3 class="article-title">Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                managementof multiple blogs and allows easy manipulation of
+                embeds and themes provide easy ways to aa functionality or
+                change the looks of a blog.
+              </p>
+            </article>
+            <article>
+              <h3 class="article-title">Robust content manager</h3>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With functionality,
+                you're in full control.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="section-dark">
+        <div class="section-content">
+          <div class="section-img">
+            <picture>
+              <img src="./images/illustration-phones.svg" />
+            </picture>
+          </div>
+          <div class="section-txt">
+            <article>
+              <h3 class="article-title article-title-light">
+                State of the Art Infrasturcture
+              </h3>
+              <p class="text-light">
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                tour site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="section-light section2">
+        <div class="section-content">
+          <div class="section-img">
+            <picture>
+              <source
+                media="(min-width: 850px)"
+                srcset="./images/illustration-laptop-desktop.svg"
+              />
+              <source
+                media="(min-width: 300px)"
+                srcset="./images/illustration-laptop-mobile.svg"
+              />
+              <img src="./images/illustration-laptop-desktop.svg" />
+            </picture>
+          </div>
+          <div class="section-txt">
+            <article>
+              <h3 class="article-title">Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </article>
+            <article>
+              <h3 class="article-title">Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple straightforward CLI tool
+                that makes customization and deployment a breeze, but capable of
+                producing even the most complicated sites.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-col">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Product</h5>
+        <div class="footer-links">
+          <ul>
+            <li class="footer-link">Overview</li>
+            <li class="footer-link">Pricing</li>
+            <li class="footer-link">Marketplace</li>
+            <li class="footer-link">Features</li>
+            <li class="footer-link">Integrations</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Company</h5>
+        <div class="footer-links">
+          <ul>
+            <li class="footer-link">About</li>
+            <li class="footer-link">Team</li>
+            <li class="footer-link">Blog</li>
+            <li class="footer-link">Carrers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Contact</h5>
+        <div class="footer-links">
+          <ul>
+            <li class="footer-link">Contact</li>
+            <li class="footer-link">Newsletter</li>
+            <li class="footer-link">Linkedin</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Valeriu</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
